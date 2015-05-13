@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Upload an image</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Upload your image</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="picture">
+            <p>
+                <input type="submit">
+            </p>
+        </form>
+    </body>
+</html>
