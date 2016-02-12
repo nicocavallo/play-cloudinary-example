@@ -15,3 +15,5 @@ libraryDependencies ++= Seq(
   cache,
   ws
 )
+
+coverageExcludedPackages := "<empty>;Reverse.*;.*AuthService.*;models\\.data\\..*"
