@@ -1,0 +1,12 @@
+language: scala
+
+scala:
+  - 2.11.5
+
+script:
+  - export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
+  - sbt clean test
+
+notifications:
+  email:
+    - nicolas.cavallo@gmail.com 
